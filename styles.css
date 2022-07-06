@@ -1,0 +1,1008 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(255, 230, 0);
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgb(255, 230, 0);
+  display: flex;
+}
+
+/* ------------ topmenunav -----------------*/
+.navmenu {
+  width: 30%;
+  height: 60px;
+  background: rgb(255, 230, 0);
+  float: left;
+  margin: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 230, 0);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+}
+
+.active {
+  background-color: #ffae00;
+  color: rgb(0, 0, 0);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ffae00;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-content a:hover {
+  background-color: #ffae00;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 1340px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav,
+  .navmenu {
+    width: 100%;
+  }
+  .topnav a,
+  .dropdown {
+    background-color: rgb(255, 240, 106);
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .cenlogo,
+  .links,
+  .cenlogo > img,
+  .links > img,
+  .links > a {
+    display: none;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ------------ topmenunav end-----------------*/
+
+/* ------------ logo -----------------*/
+
+.cenlogo {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cenlogo > img {
+  width: 120px;
+  padding: 15px;
+}
+
+/* ------------ logoend -----------------*/
+
+/* ------------ links -----------------*/
+
+.links {
+  display: flex;
+  width: 30%;
+  height: 60px;
+  background: rgb(255, 230, 0);
+  float: left;
+  margin: 20px;
+  line-height: 60px;
+  padding-left: 12%;
+}
+
+.links a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+}
+
+.links img {
+  width: 30px;
+}
+
+.reg {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(255, 255, 255);
+
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+}
+.reg:hover {
+  box-shadow: 10px 10px #000000;
+}
+
+/*-----------conseg1-----*/
+
+.conseg1 {
+  width: 100%;
+  height: 500px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+}
+.seg1p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+  box-sizing: border-box;
+}
+.seg1c {
+  height: 400px;
+  background: rgb(255, 230, 0);
+  padding: 15px;
+  flex: 1 1 200px;
+  margin: 20px;
+}
+.seg1c1 {
+  height: 110px;
+  background: rgb(255, 230, 0);
+  padding-left: 3px;
+  flex: 1 1 200px;
+  margin: 10px;
+  border-left: #000 dotted;
+}
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media (max-width: 1068px) {
+  .conseg1 {
+    height: auto;
+  }
+  .seg1p {
+    height: auto;
+  }
+  .seg1c {
+    height: auto;
+  }
+  .seg1c1 {
+    height: auto;
+  }
+}
+
+/*-------------------conseg1--ended------------------------*/
+
+/*-------------------conseg2--started------------------------*/
+
+.conseg2 {
+  width: 100%;
+  height: 620px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg2p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+  background: rgb(255, 230, 0);
+  box-sizing: border-box;
+}
+.seg2c {
+  height: 550px;
+  background: rgb(255, 230, 0);
+
+  padding: 15px;
+  flex: 1 1 400px;
+  margin: 20px;
+}
+.seg2c > img {
+  box-shadow: -60px -20px #666666d0;
+  margin-left: 25%;
+  width: 60%;
+  height: 100%;
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+}
+
+@media (max-width: 1068px) {
+  .conseg2 {
+    height: auto;
+  }
+  .seg2p {
+    height: auto;
+  }
+  .seg2c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg2--ended------------------------*/
+
+/*-------------------conseg3--start------------------------*/
+
+.conseg3 {
+  width: 100%;
+  height: 620px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg3p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+}
+.seg3c {
+  height: 550px;
+  background: rgb(255, 230, 0);
+  background-image: url("images/small_img1.jpeg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 200px;
+  border-left: black 2px dashed;
+
+  padding: 15px;
+  flex: 1 1 200px;
+  margin: 20px;
+}
+.seg3c:first-child {
+  background-image: url("images/small_img3.jpeg");
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+  background: transparent;
+}
+
+.txt1:hover {
+  text-decoration: underline 14px white;
+
+  transition: 0.3s linear;
+}
+
+.seg3c:hover {
+  transform: translateX(-2%);
+  box-shadow: 15px 15px 8px #8f8a45;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1068px) {
+  .conseg3 {
+    height: auto;
+  }
+  .seg3p {
+    height: auto;
+  }
+  .seg3c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg3--ended------------------------*/
+
+/*-------------------conseg4--start------------------------*/
+
+.conseg4 {
+  width: 100%;
+  height: 620px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg4p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+}
+.seg4c {
+  height: 550px;
+  background: rgb(255, 230, 0);
+
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 200px;
+  border-left: black 2px dashed;
+
+  padding: 15px;
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.seg4c:first-child {
+  background-image: url("images/small_img2.jpeg");
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+  background: transparent;
+}
+
+.txt1:hover {
+  text-decoration: underline 14px white;
+
+  transition: 0.3s linear;
+}
+
+.seg4c:hover {
+  transform: translateX(-2%);
+  box-shadow: 15px 15px 8px #8f8a45;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1068px) {
+  .conseg4 {
+    height: auto;
+  }
+  .seg4p {
+    height: auto;
+  }
+  .seg4c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg4--ended------------------------*/
+
+/*-------------------conseg5--started------------------------*/
+
+.conseg5 {
+  width: 100%;
+  height: 620px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg5p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+  background: rgb(255, 230, 0);
+  box-sizing: border-box;
+}
+.seg5c {
+  height: 550px;
+  background: rgb(255, 230, 0);
+
+  padding: 15px;
+  flex: 1 1 400px;
+  margin: 20px;
+}
+.seg5c > img {
+  box-shadow: -60px -20px #666666d0;
+  margin-left: 25%;
+  width: 60%;
+  height: 100%;
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+}
+
+@media (max-width: 1068px) {
+  .conseg5 {
+    height: auto;
+  }
+  .seg5p {
+    height: auto;
+  }
+  .seg5c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg5--ended------------------------*/
+
+/*-------------------conseg6--start------------------------*/
+
+.conseg6 {
+  width: 100%;
+  height: 620px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg6p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+}
+.seg6c {
+  height: 550px;
+  background: rgb(255, 230, 0);
+
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 200px;
+  border-left: black 2px dashed;
+
+  padding: 15px;
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.seg6c:first-child {
+  background-image: url("images/small_img4.jpeg");
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+  background: transparent;
+  text-shadow: #ff9900 4px 4px 8px;
+}
+
+.txt1:hover {
+  text-decoration: underline 14px white;
+
+  transition: 0.3s linear;
+}
+
+.seg6c:hover {
+  transform: translateX(-2%);
+  box-shadow: 15px 15px 8px #8f8a45;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1068px) {
+  .conseg6 {
+    height: auto;
+  }
+  .seg6p {
+    height: auto;
+  }
+  .seg6c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg6--ended------------------------*/
+
+/*-------------------conseg7--start------------------------*/
+
+.conseg7 {
+  width: 100%;
+  height: 620px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg7p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+}
+.seg7c {
+  height: 550px;
+  background: rgb(255, 230, 0);
+  background-image: url("images/small_img5.jpeg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 200px;
+  border-left: black 2px dashed;
+
+  padding: 15px;
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.seg7c:first-child {
+  background-image: url("images/small_img6.jpeg");
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+  background: transparent;
+}
+
+.txt1:hover {
+  text-decoration: underline 14px white;
+
+  transition: 0.3s linear;
+}
+
+.seg7c:hover {
+  transform: translateX(-2%);
+  box-shadow: 15px 15px 8px #8f8a45;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1068px) {
+  .conseg7 {
+    height: auto;
+  }
+  .seg7p {
+    height: auto;
+  }
+  .seg7c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg7--ended------------------------*/
+
+/*-------------------conseg8--started-----------------------*/
+
+.conseg8 {
+  width: 100%;
+  height: 220px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+.seg8p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+}
+.seg8c {
+  height: 170px;
+  background: rgb(255, 230, 0);
+
+  padding: 15px;
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+  background: transparent;
+}
+#email {
+  background: #000;
+  color: rgb(229, 255, 0);
+  padding: 15px;
+  width: 70%;
+  border: none;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  margin: 0;
+}
+
+#subscribe {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  width: 100px;
+  border: none;
+  margin: 0;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#subscribe:hover {
+  box-shadow: #000 8px 8px;
+}
+
+.txt1:hover {
+  text-decoration: underline 14px white;
+
+  transition: 0.3s linear;
+}
+
+@media (max-width: 1068px) {
+  .conseg8 {
+    height: auto;
+  }
+  .seg8p {
+    height: auto;
+  }
+  .seg8c {
+    height: auto;
+  }
+}
+
+/*-------------------conseg8--ended------------------------*/
+
+/*-------------------conseg9--started------------------------*/
+
+.conseg9 {
+  width: 100%;
+  height: 450px;
+  background: rgb(255, 230, 0);
+  color: rgb(0, 0, 0);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+td {
+  text-align: left;
+  padding: 8px;
+}
+a {
+  text-decoration: none;
+  font-family: Segoe UI;
+  color: black;
+}
+
+.seg9p {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: all 0.2 linear;
+  border-top: #000 dashed;
+}
+.seg9c {
+  height: 400px;
+  background: rgb(255, 230, 0);
+
+  padding: 35px;
+  flex: 1 1 450px;
+  margin: 20px;
+}
+
+.seg8c ul li a {
+  font-family: "Segoe UI";
+  font-size: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.seg8c ul li {
+  width: 100%;
+  margin-top: 10%;
+  text-decoration: none;
+  list-style: none;
+}
+
+.txt5 {
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.txt2 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.txt4 {
+  color: rgb(58, 58, 58);
+  font-family: "Segoe UI";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.txt1 {
+  color: black;
+  font-family: "Segoe UI";
+  font-size: 60px;
+  font-weight: 900;
+  background: transparent;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  margin: 15px;
+}
+
+.icons:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: rgb(255, 145, 0);
+  transition-duration: 0.2s;
+}
+@media (max-width: 1068px) {
+  .conseg9 {
+    height: auto;
+  }
+  .seg9p {
+    height: auto;
+  }
+  .seg9c {
+    height: auto;
+  }
+  .seg9c ul li a {
+    margin: 10px;
+    font-size: 10px;
+  }
+}
+
+/*-------------------conseg9--ended------------------------*/
